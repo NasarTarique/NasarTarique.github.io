@@ -1,0 +1,148 @@
+.header{
+    display: grid;
+    
+    background-color: #000000;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 0%;
+    opacity: .96;
+    height: 45;
+
+    
+}
+.body{  
+    background-color:black;
+   display: block;
+    margin: 0%;
+    
+}
+
+.header>div>span>a{
+    color: #fafafa;
+    font: bold;
+    font-family: sans-serif;
+    padding:10;
+    text-decoration: none;
+    border:none;
+    outline: none;
+
+}
+.header>div>span>a:hover{
+    color: #2C7CD5;
+}
+.main{
+    height: 500;
+    background-color:#2C7CD5;
+    display: block;
+    padding: 5%;
+    text-align: center;
+    
+    
+}
+.profile-pic{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    height: 300;
+    box-shadow:0 0 2px 7px #000000;
+    animation: drop 2.5s ease;
+    
+    
+}
+
+.main>h1{
+    
+    color:000000;
+    font-family: 'Dancing Script', cursive;
+    font: bolder;
+    font-stretch: ultra-expanded;
+    animation: name 2.5s ease;
+
+}
+.about{
+    display: flex;
+    column-count: 2;
+    background-color: fafafa;
+   padding: 20px;
+   height: 700;
+}
+.sec1{                  
+    flex-grow: 1;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right:auto;
+    margin-left: auto;
+    color: #fafafa;
+    border-radius: 70px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+   
+    font-size: larger;
+    border-radius: 70px;
+    background-color: #2C7CD5;
+    
+}
+.sec2{
+    flex-grow: 1;
+    
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right:auto;
+    margin-left: auto;
+    font-family: 'Source Code Pro', monospace;
+    color: 000000;
+    font-weight: 100;
+    font-size: 30;
+    text-align: center;
+    word-wrap: break-word;
+    font-stretch: ultra-expanded;
+    
+}
+
+.projects{
+    display: grid;
+    height: 600;
+    background-color: #000000;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.projects div{
+    
+    color: #2C7CD5;
+    
+}
+
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+@keyframes name{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%
+    {
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
+
+footer{
+    color: #fafafa;
+    text-align:center ;
+    background-color: #2C7CD5;
+}
+
