@@ -1,3 +1,8 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 .header{
     display: grid;
     
@@ -7,21 +12,24 @@
     text-align: center;
     padding: 0%;
     opacity: .96;
-    height: 45;
+    height: 92px;
 
     
 }
 .body{  
-    background-color:black;
-   display: block;
+    background-color:111111;
+    background-image: radial-gradient(#111111,#000000);
+    display: block;
     margin: 0%;
+    
     
 }
 
 .header>div>span>a{
-    color: #fafafa;
+    color: #ffffff;
     font: bold;
-    font-family: sans-serif;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     padding:10;
     text-decoration: none;
     border:none;
@@ -29,120 +37,50 @@
 
 }
 .header>div>span>a:hover{
-    color: #2C7CD5;
-}
-.main{
-    height: 500;
-    background-color:#2C7CD5;
-    display: block;
-    padding: 5%;
-    text-align: center;
-    
-    
-}
-.profile-pic{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 50%;
-    height: 300;
-    box-shadow:0 0 2px 7px #000000;
-    animation: drop 2.5s ease;
-    
-    
+    background-color: #EE0000 ;
 }
 
-.main>h1{
-    
-    color:000000;
-    font-family: 'Dancing Script', cursive;
-    font: bolder;
-    font-stretch: ultra-expanded;
-    animation: name 2.5s ease;
-
-}
-.about{
-    display: flex;
-    column-count: 2;
-    background-color: fafafa;
-   padding: 20px;
-   height: 700;
-}
-.sec1{                  
-    flex-grow: 1;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-right:auto;
-    margin-left: auto;
-    color: #fafafa;
-    border-radius: 70px;
-    font-weight: 900;
-    text-align: center;
-    font-family: 'Baloo Bhaina 2', cursive;
-   
-    font-size: larger;
-    border-radius: 70px;
-    background-color: #2C7CD5;
-    
-}
-.sec2{
-    flex-grow: 1;
-    
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-right:auto;
-    margin-left: auto;
-    font-family: 'Source Code Pro', monospace;
-    color: 000000;
-    font-weight: 100;
-    font-size: 30;
-    text-align: center;
-    word-wrap: break-word;
-    font-stretch: ultra-expanded;
-    
-}
-
-.projects{
+.home{
     display: grid;
-    height: 600;
-    background-color: #000000;
-    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    grid-template-columns: 1fr 1fr;
+   
+    
+}
+.profile{
+    width: 50%;
+    position: relative;
+    justify-self: center ;
+    border: 9px solid #EE0000;
+}
+
+.profile p{
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
     justify-content: center;
+    font-size: 64px;
+}
+
+.about{
+    width :50%;
+    position: relative;
+    justify-self: center ;
+    font-family: Montserrat, sans-serif;
+   
+}
+.about-head{
+    margin: 7px;
+    text-align: center;
+    margin-right: 10px;
     
 }
-
-.projects div{
-    
-    color: #2C7CD5;
-    
+.about-head h
+{   color: #ffffff;
+    font-size: 36px;
+    border-bottom: 9px solid #EE0000;
 }
-
-
-@keyframes drop{
-    0%{
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100%{
-        opacity: 100;
-        transform: translateY(0px);
-    }
+.about p{
+    color: #ffffff;
+    font-size: 24px;
 }
-@keyframes name{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100%
-    {
-        opacity: 100;
-        transform: translateX(0px);
-    }
-}
-
-footer{
-    color: #fafafa;
-    text-align:center ;
-    background-color: #2C7CD5;
-}
-
