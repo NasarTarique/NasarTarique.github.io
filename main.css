@@ -5,7 +5,6 @@
 }
 .header{
     display: grid;
-    
     background-color: #000000;
     grid-template-columns: 1fr;
     align-items: center;
@@ -17,8 +16,7 @@
     
 }
 .body{  
-    background-color:111111;
-    background-image: radial-gradient(#111111,#000000);
+    background-color:111111; 
     display: block;
     margin: 0%;
     
@@ -84,3 +82,116 @@
     color: #ffffff;
     font-size: 24px;
 }
+.projects{
+	display:block;
+	font-family: Montserrat, sans-serif;
+}
+.project_head{
+	color:#ffffff;
+	border-bottom:9px solid #EE0000;
+}
+
+.proj_grid{
+	display:grid;
+	height:100vh;
+	grid-template-columns:  1fr 1fr 1fr;
+	
+}
+.card1{
+	height:50vh;
+	background-color:#000000;
+	margin-left:20%;
+	margin-right:20%;
+	margin-top :30%;
+	box-shadow:0px 4px 8px 0px #EE0000;
+
+}
+.cardimg1{
+		width:100%;
+		height:50%;
+		background-image:url('img/laptopimg1.jpg');
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-blend-mode:overlay;
+}
+.blend{
+	background-color:rgba(0,0,0,0.5);
+	height:100%;
+	width:100%;
+	color:#ffffff;
+	text-align:center;
+	padding-top:40px;
+}
+.info{
+	padding-top:20px;
+	padding-left:8px;
+	padding-right:8px;
+	text-align:center;
+	font-size:24px;	
+	color:#fafafa;
+}
+.card2{
+	height:50vh;
+	background-color:#000000;
+	margin-left:20%;
+	margin-right:20%;
+	margin-top :30%;
+	box-shadow:0px 4px 8px 0px #EE0000;
+
+
+}
+.cardimg2{
+		width:100%;
+		height:50%;
+		background-image:url('img/laptopimg2.jpg');
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-blend-mode:soft;
+}
+.card3{
+	height:50vh;
+	background-color:#000000;
+	margin-left:20%;
+	margin-right:20%;
+	margin-top :30%;
+	box-shadow:0px 4px 8px 0px #EE0000;
+
+
+}
+.cardimg3{
+		width:100%;
+		height:50%;
+		background-image:url('img/laptopimg3.jpg');
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-blend-mode:overlay;
+}
+
+.card1:hover{
+	box-shadow:0px 12px 16px 0px #EE0000;
+	transition:0.3s;
+}
+
+.card2:hover{
+	box-shadow:0px 12px 16px 0px #EE0000;
+	transition:0.3s;
+}
+.card3:hover{
+	box-shadow:0px 12px 16px 0px #EE0000;
+	transition:0.3s;
+}
+
+.contacts{
+	display:block;
+	font-family: Montserrat, sans-serif;
+
+}
+.contacts_head{
+	text-align:center;
+	color:#ffffff;
+	border-bottom:9px solid #EE0000;
+
+
+}
+
+
