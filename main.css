@@ -35,7 +35,8 @@
 
 }
 .header>div>span>a:hover{
-    background-color: #EE0000 ;
+    background: linear-gradient(45deg, rgb(255,163,0), #EE0000);
+	border-radius: 3px;
 }
 
 .home{
@@ -50,14 +51,17 @@
     width: 50%;
     position: relative;
     justify-self: center ;
-    border: 9px solid #EE0000;
+    border: 9px solid transparent;
+	border-image: linear-gradient(to left, rgb(255, 163, 0), #EE0000);
+	border-image-slice:1;
+
 }
 
 .profile p{
     font-family: Montserrat, sans-serif;
     color: #ffffff;
     justify-content: center;
-    font-size: 64px;
+    font-size: 4vw;
 }
 
 .about{
@@ -76,7 +80,9 @@
 .about-head h
 {   color: #ffffff;
     font-size: 36px;
-    border-bottom: 9px solid #EE0000;
+    border-bottom: 9px solid;
+	border-image: linear-gradient(to left,#ffa300,#EE0000);
+	border-image-slice:1;
 }
 .about p{
     color: #ffffff;
@@ -88,7 +94,9 @@
 }
 .project_head{
 	color:#ffffff;
-	border-bottom:9px solid #EE0000;
+	border-bottom:9px solid ;
+	border-image: linear-gradient(to right, #ffa300,#EE0000) ;
+	border-image-slice: 1;
 }
 
 .proj_grid{
@@ -97,13 +105,13 @@
 	grid-template-columns:  1fr 1fr 1fr;
 	
 }
-.card1{
+.card{
 	height:50vh;
-	background-color:#000000;
+	background-color:#ffffff;
 	margin-left:20%;
 	margin-right:20%;
  	margin-top :30%;
-	box-shadow:0px 4px 8px 0px #EE0000;
+	box-shadow:0px 4px 8px 0px #000000;
 
 }
 .cardimg1{
@@ -128,18 +136,10 @@
 	padding-right:8px;
 	text-align:center;
 	font-size:24px;	
-	color:#fafafa;
+	font-weight: 300;
+	color:#000000;
 }
-.card2{
-	height:50vh;
-	background-color:#000000;
-	margin-left:20%;
-	margin-right:20%;
-	margin-top :30%;
-	box-shadow:0px 4px 8px 0px #EE0000;
 
-
-}
 .cardimg2{
 		width:100%;
 		height:50%;
@@ -148,16 +148,7 @@
 		background-repeat:no-repeat;
 		background-blend-mode:soft;
 }
-.card3{
-	height:50vh;
-	background-color:#000000;
-	margin-left:20%;
-	margin-right:20%;
-	margin-top :30%;
-	box-shadow:0px 4px 8px 0px #EE0000;
 
-
-}
 .cardimg3{
 		width:100%;
 		height:50%;
@@ -167,19 +158,12 @@
 		background-blend-mode:overlay;
 }
 
-.card1:hover{
-	box-shadow:0px 12px 16px 0px #EE0000;
+.card:hover{
+	height: 60vh;
+	box-shadow:0px 12px 16px 0px #000000;
 	transition:0.3s;
 }
 
-.card2:hover{
-	box-shadow:0px 12px 16px 0px #EE0000;
-	transition:0.3s;
-}
-.card3:hover{
-	box-shadow:0px 12px 16px 0px #EE0000;
-	transition:0.3s;
-}
 
 .contacts{
 	display:block;
@@ -189,7 +173,9 @@
 .contacts_head{
 	text-align:center;
 	color:#ffffff;
-	border-bottom:9px solid #EE0000;
+	border-bottom:9px solid ;
+	border-image: linear-gradient(to right,rgb(255,163,0),#EE0000);
+	border-image-slice: 1;
 
 
 }
@@ -201,7 +187,7 @@
 		align-items: center
 }
 .contact_logo{
-		background-color: #EE0000;
+		background-image: linear-gradient(45deg, #ffa300,#EE0000 );
 		height: 10vh;
 		align-self: center;
 		margin-left: 30%;
@@ -222,7 +208,10 @@
 	align-self: center;
 
 }
-
+.social{
+		max-height: 8vh;
+		max-width: 8vh;
+}
 .logo2{
 	align-self: center;
 	background-size: contain;
