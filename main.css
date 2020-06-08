@@ -11,7 +11,7 @@
     text-align: center;
     padding: 0%;
     opacity: .96;
-    height: 92px;
+    height: 78px;
 
     
 }
@@ -24,9 +24,9 @@
 }
 
 .header>div>span>a{
-    color: #ffffff;
+    color: peachpuff;
     font: bold;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     padding:10;
     text-decoration: none;
@@ -43,7 +43,8 @@
     display: grid;
     margin-top: 10%;
     margin-bottom: 10%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;;
+	min-height: 100vh;	
    
     
 }
@@ -59,12 +60,13 @@
 
 .profile p{
     font-family: Montserrat, sans-serif;
-    color: #ffffff;
+    color: peachpuff;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 68px;
 }
 
 .about{
+	margin-top: 10%;
     width :50%;
     position: relative;
     justify-self: center ;
@@ -78,22 +80,22 @@
     
 }
 .about-head h
-{   color: #ffffff;
-    font-size: 36px;
+{   color: peachpuff;
+    font-size: 48px;
     border-bottom: 9px solid;
 	border-image: linear-gradient(to left,#ffa300,#EE0000);
 	border-image-slice:1;
 }
 .about p{
-    color: #ffffff;
-    font-size: 24px;
+    color: peachpuff;
+    font-size:24px;
 }
 .projects{
 	display:block;
 	font-family: Montserrat, sans-serif;
 }
 .project_head{
-	color:#ffffff;
+	color:peachpuff;
 	border-bottom:9px solid ;
 	border-image: linear-gradient(to right, #ffa300,#EE0000) ;
 	border-image-slice: 1;
@@ -101,46 +103,44 @@
 
 .proj_grid{
 	display:grid;
-	height:100vh;
+	min-height:100vh;
 	grid-template-columns:  1fr 1fr 1fr;
 	
 }
 .card{
-	height:50vh;
-	background-color:#ffffff;
-	margin-left:20%;
-	margin-right:20%;
- 	margin-top :30%;
-	box-shadow:0px 4px 8px 0px #000000;
-
-}
+     height:50vh;
+	 background-image: linear-gradient(45deg, #ffa300, #EE0000);
+	 margin-left:20%;
+	 margin-right:20%; 
+	 margin-top :30%; 
+	 box-shadow:0px 4px 8px 0px #000000; 
+} 
 .cardimg1{
-		width:100%;
-		height:50%;
-		background-image:url('img/laptopimg1.jpg');
-		background-size:cover;
-		background-repeat:no-repeat;
-		background-blend-mode:overlay;
+		grid-area: cardimg1;
+	 	width:100%;
+		height:50%; 
+		background-image:url('img/laptopimg1.jpg'); 
+		background-size:cover; 
+		background-repeat:no-repeat; background-blend-mode:overlay; 
 }
-.blend{
-	background-color:rgba(0,0,0,0.5);
-	height:100%;
-	width:100%;
-	color:#ffffff;
-	text-align:center;
-	padding-top:40px;
+.info h1 { 
+	color: #000000; 
+	font-size: 32px; 
+	font-weight: 500; 
 }
+
 .info{
 	padding-top:20px;
 	padding-left:8px;
 	padding-right:8px;
 	text-align:center;
-	font-size:24px;	
+	font-size:18px;	
 	font-weight: 300;
-	color:#000000;
+	color:peachpuff;
 }
 
 .cardimg2{
+		grid-area: cardimg2;
 		width:100%;
 		height:50%;
 		background-image:url('img/laptopimg2.jpg');
@@ -150,6 +150,7 @@
 }
 
 .cardimg3{
+		grid-area: cardimg3;
 		width:100%;
 		height:50%;
 		background-image:url('img/laptopimg3.jpg');
@@ -165,14 +166,14 @@
 }
 
 
-.contacts{
-	display:block;
-	font-family: Montserrat, sans-serif;
+.contact{
+	margin-top: 10%;
+	
 
 }
 .contacts_head{
 	text-align:center;
-	color:#ffffff;
+	color:peachpuff;
 	border-bottom:9px solid ;
 	border-image: linear-gradient(to right,rgb(255,163,0),#EE0000);
 	border-image-slice: 1;
@@ -181,28 +182,31 @@
 }
 
 .contact_body{
-		display: grid;
-		height: 100vh;
+		display: flex;
+		min-height: 50vh;
+		max-height: 100vh;
 		width: 100%;
-		align-items: center
+		justify-content: center;
+		align-items: center;
+		align-content: center;
 }
 .contact_logo{
 		background-image: linear-gradient(45deg, #ffa300,#EE0000 );
 		height: 10vh;
 		align-self: center;
-		margin-left: 30%;
-		margin-right: 30%;	
+		width:30%;
 		display:flex;
 	   border-radius: 10px;	
 	   justify-content: space-around;
 	   align-items: center;
-	   align-content: center;;
+	   align-content: center;
+
 }
 
 .logo1{
 	background-size: contain;
 	border-radius: 100px;
-	background-color: #ffffff;
+	background-color: peachpuff;
 	height: 8vh;
 	width: 8vh;
 	align-self: center;
@@ -216,7 +220,7 @@
 	align-self: center;
 	background-size: contain;
 	border-radius: 100px;
-	background-color: #ffffff;
+	background-color: peachpuff;
 	height: 8vh;	
 	width: 8vh;
 }
@@ -238,9 +242,55 @@
 	height: 8vh;	
 	width: 8vh;
 }
+@media only screen and (max-width:550px)
+{
+		.profile p{
+				font-size: 42px;
 
+		}
 
+		.about-head h {
+				font-size:24px;
 
+		}
+		.about div p {
+				font-size: 16px;
+		}
+}
+
+@media only screen and (max-width:800px){
+		.contact_logo{
+				width:36vh;
+		}
+}
+
+@media only screen and (max-width:1000px){
+
+	.home{
+		display: grid;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+    
+
+}
+.profile{
+		height: 100vw;
+		font-size: 24px;
+
+}
+.about{
+		height: 100vw;
+		font-size: 24px;
+}
+
+.proj_grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	}
+}
 
 
 
