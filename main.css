@@ -216,7 +216,7 @@
 		max-height: 8vh;
 		max-width: 8vh;
 }
-.logo2{
+.logo{
 	align-self: center;
 	background-size: contain;
 	border-radius: 100px;
@@ -224,23 +224,13 @@
 	height: 8vh;	
 	width: 8vh;
 }
-
-.logo3{
-	align-self: center;
-	background-size: contain;
-	border-radius: 100px;
-	background-color: #ffffff;
-	height: 8vh;	
-	width: 8vh;
+.logo1:hover{
+		
+		background-image: linear-gradient(90deg,#ffa300,#EE0000)
 }
-
-.logo4{
-	align-self: center;
-	background-size: contain;
-	border-radius: 100px;
-	background-color: #ffffff;
-	height: 8vh;	
-	width: 8vh;
+.logo:hover{
+		
+		background-image: linear-gradient(90deg,#ffa300,#EE0000)
 }
 @media only screen and (max-width:550px)
 {
